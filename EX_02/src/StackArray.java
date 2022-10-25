@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class StackArray<T> {
 
     private T array[];
@@ -39,8 +41,8 @@ public class StackArray<T> {
     }
 
     public String toString(){
-
-        return array.toString();
+        System.out.println(Arrays.toString(array));
+        return null;
     }
 
 }
