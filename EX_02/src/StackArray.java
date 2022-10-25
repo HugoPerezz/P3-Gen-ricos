@@ -1,7 +1,3 @@
-import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class StackArray<T> {
 
     private T array[];
@@ -23,18 +19,18 @@ public class StackArray<T> {
     }
 
     public <T> void removeFirst(){
-
-
-
+       for(int i = array.length; i < 0; i++){
+           array[i] = array[i + 1];
+           contador--;
+       }
     }
 
-    public T void add(T dato){
+    public <T> void add(){
 
         for(int i = array.length; i > 0; i--){
             array[i] = array[i - 1];
             contador++;
         }
-
     }
 
     public <T> void getFirst(){
